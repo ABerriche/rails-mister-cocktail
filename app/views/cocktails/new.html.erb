@@ -1,5 +1,5 @@
-<%= simple_form_for @cocktail do |f| %>
-<%= f.label :name, "Name" %>
-<%= f.text_field :name %>
-<%= f.submit  "add the cocktail!"%>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.submit  "add the cocktail!"%>
 <% end %>
